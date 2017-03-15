@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Mars.cs" />
-    <Compile Include="Rover.cs" />
+    <Compile Include="command\action\ICommandAction.cs" />
+    <Compile Include="command\action\LeftCommandAction.cs" />
+    <Compile Include="command\action\MoveCommandAction.cs" />
+    <Compile Include="command\action\RightCommandAction.cs" />
+    <Compile Include="command\CommandMap.cs" />
+    <Compile Include="command\CommandNotFoundException.cs" />
+    <Compile Include="Direction.cs" />
+    <Compile Include="Planet.cs" />
+    <Compile Include="rover\Rover.cs" />
+    <Compile Include="rover\RoverArgumentException.cs" />
+    <Compile Include="rover\RoverEngine.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
